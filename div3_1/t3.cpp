@@ -8,35 +8,24 @@
 using ll = long long;
 using namespace std;
 
-void solve(){
-    int v, m;
-    cin>>v>>m;
-    int w[v + 1] = {0};
-    while(m--){
-        int a, b;
-        cin>>a>>b;
-        w[a]++;
-        w[b]++;
-    }
-    for(int i = 1; i <= v; i++){
-        cout << w[i] << " ";
-
-    }
-    cout << ENDL;
-}
-
-
 signed main(){
     
     goodluck
     // freopen("std.in", "r", stdin);
     // freopen("sdt.out", "w", stdout);
 
+    
     int n;
     cin>>n;
-    while(n--) solve();
+    map<int, int> mapa;
+    for(int i = 0; i < n; i++){
+        int a;
+        cin>>a;
+        mapa[a]++;
+    }
+    int D = 1 + 8 * n;
+    int x = (1 + sqrt(D)) / 2;
     
-
 
     endd
 }

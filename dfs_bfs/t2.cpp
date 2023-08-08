@@ -8,34 +8,19 @@
 using ll = long long;
 using namespace std;
 
-void solve(){
-    int v, m;
-    cin>>v>>m;
-    int w[v + 1] = {0};
-    while(m--){
-        int a, b;
-        cin>>a>>b;
-        w[a]++;
-        w[b]++;
-    }
-    for(int i = 1; i <= v; i++){
-        cout << w[i] << " ";
-
-    }
-    cout << ENDL;
-}
-
-
 signed main(){
     
     goodluck
     // freopen("std.in", "r", stdin);
     // freopen("sdt.out", "w", stdout);
 
-    int n;
-    cin>>n;
-    while(n--) solve();
-    
+    while(true){
+        // cout << " 1";
+        int a;
+        cin>>a;
+        cout << a << ENDL;
+    }
+    stack f;
 
 
     endd

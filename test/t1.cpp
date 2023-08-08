@@ -8,24 +8,6 @@
 using ll = long long;
 using namespace std;
 
-void solve(){
-    int v, m;
-    cin>>v>>m;
-    int w[v + 1] = {0};
-    while(m--){
-        int a, b;
-        cin>>a>>b;
-        w[a]++;
-        w[b]++;
-    }
-    for(int i = 1; i <= v; i++){
-        cout << w[i] << " ";
-
-    }
-    cout << ENDL;
-}
-
-
 signed main(){
     
     goodluck
@@ -34,8 +16,16 @@ signed main(){
 
     int n;
     cin>>n;
-    while(n--) solve();
-    
+    vector<pair<int, int>> massive(n);
+    // for(auto &it : massive){
+    //     cin>>it;
+    //     it = 17;
+    // }
+    for(auto it = massive.begin(); it != massive.end(); it++){
+        cin >> it->first;
+        cin>>it->second;
+    }
+    for(auto it : massive) cout << it.first << " " << it.second << "      ";
 
 
     endd
