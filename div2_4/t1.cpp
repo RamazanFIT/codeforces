@@ -35,7 +35,21 @@ signed main(){
     // freopen("std.in", "r", stdin);
     // freopen("sdt.out", "w", stdout);
 
-    
+    int n;
+    cin>>n;
+    while(n--){
+        int a, b, c;
+        cin>>a>>b>>c;
+        if(c % 2 == 0){
+            if(a > b){
+                cout << "First" << ENDL;
+            } else cout << "Second" << ENDL;
+        } else{
+            if(b > a){
+                cout << "Second" << ENDL;
+            } else cout << "First" << ENDL;
+        }
+    }
     
 
 

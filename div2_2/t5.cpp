@@ -15,7 +15,13 @@ signed main(){
     // freopen("sdt.out", "w", stdout);
 
     
-    
+    vector<int> a{1,34,3 ,42, 23};
+    // sort(a.rbegin(), a.rend());
+    sor);
+    for(int i = 0; i < a.size(); i++){
+        cout << a[i] << " ";
+    }
+
 
 
     endd
