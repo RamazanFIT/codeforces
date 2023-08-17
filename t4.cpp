@@ -29,31 +29,47 @@
 using ll = long long;
 using namespace std;
 
-class Solution {
-public:
-    int maxSubArray(vector<int>& nums) {
-        int left = 0;
-        int right = nums.size() - 1;
-        int sum_ = 0;
-        for(int i = 0; i < nums.size(); i++){
-            sum_ += nums[i];
-        }
-        int ans = sum_;
-        while(right - left != 0){
-            if(nums[left] < nums[right]){
-                sum_ -= nums[left];
-                ans = max(ans, sum_);
-                left++;
-            } else if(nums[left] > nums[right]){
-                sum_ -= nums[right];
-                ans = max(ans, sum_);
-                right--;
-            } else {
-                if(nums[left + 1] < nums[right - 1]){
-                    
-                }
-            }
-        }
+void solve(){
+    string a = "", b = "";
+    string s;
+    cin>>s;
+    for(int i = 0; i < s.size(); i++){
+        a += '(';
     }
-};
+     for(int i = 0; i < s.size(); i++){
+        a += ')';
+    }
+     for(int i = 0; i < s.size(); i++){
+        // a += '(';
+        b += "()";
+    }
+    if(a.find(s) == -1){
+        cout << "YES" << ENDL;
+        cout << a << ENDL;
+    } else if(b.find(s) == -1){
+        
+        cout << "YES" << ENDL;
+        cout << b << ENDL;
+    } else{
+        cout << "NO" << ENDL;
+    }
+
+}
+
+
+
+signed main(){
+    
+    goodluck
+    // freopen("std.in", "r", stdin);
+    // freopen("sdt.out", "w", stdout);
+
+    
+    int n;
+    cin>>n;
+    while(n--) solve();
+
+
+    endd
+}
 

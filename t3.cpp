@@ -25,35 +25,37 @@
 #define ss second  
 #define all(x) (x).begin(), (x).end()
 #define endd return 0;
+// #define int ll
 #define goodluck ios_base::sync_with_stdio(0);cin.tie(NULL);cout.tie(NULL);
 using ll = long long;
 using namespace std;
 
-class Solution {
-public:
-    int maxSubArray(vector<int>& nums) {
-        int left = 0;
-        int right = nums.size() - 1;
-        int sum_ = 0;
-        for(int i = 0; i < nums.size(); i++){
-            sum_ += nums[i];
-        }
-        int ans = sum_;
-        while(right - left != 0){
-            if(nums[left] < nums[right]){
-                sum_ -= nums[left];
-                ans = max(ans, sum_);
-                left++;
-            } else if(nums[left] > nums[right]){
-                sum_ -= nums[right];
-                ans = max(ans, sum_);
-                right--;
-            } else {
-                if(nums[left + 1] < nums[right - 1]){
-                    
-                }
-            }
-        }
+void solve(){
+    int target, k, cnt1, cnt2;
+    cin>>target>>k>>cnt1>>cnt2;
+    while(cnt2-- and target - k >= 0){
+        target-=k;
+        cnt2--;
     }
-};
+    // target = max(0, target - cnt1);
+    // cout << target % k + target / k << ENDL;
+
+}
+
+
+
+signed main(){
+    
+    goodluck
+    // freopen("std.in", "r", stdin);
+    // freopen("sdt.out", "w", stdout);
+
+    int n;
+    cin>>n;
+    while(n--) solve();
+    
+
+
+    endd
+}
 
